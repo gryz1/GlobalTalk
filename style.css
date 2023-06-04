@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    color: #000000;
+}
+
+.wrapper {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 93px;
+    background: #F6F5F4;
+    /* box-shadow: inset 0px -1px 0px #E0E0E0; */
+    border-bottom: 2px solid #E0E0E0;
+}
+
+nav {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Dela Gothic One';
+    font-weight: 400;
+    font-size: 20.8609px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+
+nav ul {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+}
+
+nav ul a {
+    color: inherit;
+}
+
+.sign-in p {
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-up {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.sign-in-up a {
+    display: flex;
+}
