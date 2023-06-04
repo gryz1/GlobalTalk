@@ -18,6 +18,11 @@ body {
     padding-inline: 20px;
 }
 
+.wrapper ul {
+    flex-wrap: nowrap;
+    text-wrap: nowrap;  
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -56,8 +61,9 @@ nav {
 }
 
 nav ul {
+    white-space: nowrap;
     display: flex;
-    gap: 34px;
+    gap: 0 34px;
     align-items: center;
     font-style: normal;
     font-weight: 600;
@@ -72,6 +78,10 @@ nav ul a {
 
 .color {
     color: #757575;
+}
+
+.sign-in-text {
+    font-weight: 600;
 }
 
 .sign-in p {
@@ -91,6 +101,16 @@ nav ul a {
 }
 
 .sign-up {
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.sign-in-up a {
+    position: relative;
+    padding-right: 12px;
+    
+    display: flex;
     font-family: 'Montserrat';
     font-size: 16px;
     line-height: 100%;
@@ -98,11 +118,47 @@ nav ul a {
     color: #000000;
 }
 
-.sign-in-up a {
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: -0.04em;
-    color: #000000;
+.sign-up img {
+    position: absolute;
+    width: 10px;
+    transform: scale(1.0, 0.9) translateY(-35%);
+    right: 0;
+    top: 50%;
+}
+
+@media screen and (max-width:780px) {
+    .wrapper {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .sign-up img {
+        transform: scale(1.0, 0.9) translateY(-50%);
+    }
+
+    .logo {
+        font-size: 15.8609px;;
+    }
+
+    nav ul {
+        gap: 0 34px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+    }
+}
+
+@media screen and (max-width:480px) {
+    nav ul {
+        gap: 0 20px;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .sign-in-text {
+        font-weight: 400;
+    }
 }
