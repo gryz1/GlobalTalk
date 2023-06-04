@@ -70,6 +70,10 @@ nav ul a {
     color: inherit;
 }
 
+.color {
+    color: #757575;
+}
+
 .sign-in p {
     display: flex;
     align-items: center;
