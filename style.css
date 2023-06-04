@@ -73,6 +73,11 @@ nav ul a {
 .sign-in p {
     display: flex;
     align-items: center;
+    color: #757575;
+}
+
+.sign-up a {
+    font-weight: 700;
 }
 
 .sign-in-up {
@@ -81,6 +86,19 @@ nav ul a {
     gap: 29px;
 }
 
+.sign-up {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
 .sign-in-up a {
     display: flex;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: #000000;
 }
